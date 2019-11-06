@@ -1,0 +1,114 @@
+import java.util.Scanner;
+
+public class DateValidator3 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Input the date (as a number): ");
+		int date = sc.nextInt();
+		
+		System.out.println("Input the month (as a number): ");
+		int month = sc.nextInt();
+		
+		System.out.println("Input the year (as a number): ");
+		int year = sc.nextInt();
+		
+		int maxDate;
+
+
+if (year > 2019 ||  year < 1  || month < 1 || month > 12  || date < 1 || date > 31) { 
+System.out.println("The entered date format was incorrect!");
+} else {
+
+	        switch(month){
+
+		     case 1:
+		     System.out.println(date + ". January, " + year);
+		     break;
+
+		     case 2:
+			if (year%4==0){
+			maxDate =29;}
+			else { 
+			maxDate =28;};
+			 if (date >=1 && date <= maxDate)
+			     System.out.println(date + ". February, " + year);
+		         else 
+		        System.out.println("Error entered date doesnt correspond with the month");
+			     break;
+		    		 
+		  
+		     case 3:
+			     System.out.println(date + ". March, " + year);
+			     break;
+
+		     case 4:
+		    	 maxDate = 30;
+		    	 if (date >=1 && date <= maxDate)
+				     System.out.println(date + ". April, " + year);
+			         else 
+			     System.out.println("Error entered date doesnt correspond with the month");
+		     break;
+		     
+		     case 5:
+			System.out.println(date + ". May, " + year);
+		     break;
+
+		     case 6:
+		    	 maxDate = 30;
+		    	 if (date >=1 && date <= maxDate)
+				     System.out.println(date + ". June, " + year);
+			         else 
+			        System.out.println("Error entered date doesnt correspond with the month");
+		    	 	break;
+		     
+		     case 7:
+			 System.out.println(date + ". July, " + year);
+		     break;
+		     
+		     case 8:
+			System.out.println(date + ". August, " + year);
+		     break;
+		     
+		     case 9:
+		    	 maxDate = 30;
+		    	 if (date >=1 && date <= maxDate)
+				     System.out.println(date + ". September, " + year);
+			         else 
+			        System.out.println("Error entered date doesnt correspond with the month");
+		    	 	break;
+
+		     case 10:
+		    System.out.println(date + ". October, " + year);
+		     break;
+
+		     case 11:
+		    	 maxDate = 30;
+		    	 if (date >=1 && date <= maxDate)
+				     System.out.println(date + ". November, " + year);
+			         else 
+			        	System.out.println("Error entered date doesnt correspond with the month");
+		    	 		break;
+		     
+		     case 12:
+		    System.out.println(date + ". December, " + year);
+		     break;
+
+
+		     default:
+		     System.out.println("ERROR!");
+		     break;
+	        }
+		 }
+			
+}	
+	}
+
+
+		
+	
+
+		
+
+
