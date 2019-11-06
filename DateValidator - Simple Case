@@ -1,0 +1,137 @@
+import java.util.Scanner;
+
+public class DateValidator {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Input the date (as a number): ");
+		int date = sc.nextInt();
+		
+		System.out.println("Input the month (as a number): ");
+		int month = sc.nextInt();
+		
+		System.out.println("Input the year (as a number): ");
+		int year = sc.nextInt();
+		
+		int maxDate;
+
+	        switch(month){
+
+		     case 1:
+		    maxDate = 31;
+		    if (date >=1 && date <= maxDate)
+		     System.out.println(date + ". January, " + year);
+	         else 
+	         	System.out.println("Error - enter correct date format");
+		     break;
+
+		     case 2:
+			if (year%4==0){
+			maxDate =29;}
+			else { 
+			maxDate =28;};
+			 if (date >=1 && date <= maxDate)
+			     System.out.println(date + ". February, " + year);
+		         else 
+		         	System.out.println("Error - enter correct date format");
+			     break;
+		    		 
+		  
+		     case 3:
+		  maxDate = 31;
+		  if (date >=1 && date <= maxDate)
+			     System.out.println(date + ". March, " + year);
+		         else 
+		         	System.out.println("Error - enter correct date format");
+			     break;
+
+		     case 4:
+		    	 maxDate = 30;
+		    	 if (date >=1 && date <= maxDate)
+				     System.out.println(date + ". April, " + year);
+			         else 
+			         	System.out.println("Error - enter correct date format");
+		     break;
+		     
+		     case 5:
+		    	 maxDate = 31;
+		    	 if (date >=1 && date <= maxDate)
+				     System.out.println(date + ". May, " + year);
+			         else 
+			         	System.out.println("Error - enter correct date format");
+		     break;
+
+		     case 6:
+		    	 maxDate = 30;
+		    	 if (date >=1 && date <= maxDate)
+				     System.out.println(date + ". June, " + year);
+			         else 
+			         	System.out.println("Error - enter correct date format");
+		     break;
+		     
+		     case 7:
+		    	 maxDate = 31;
+		    	 if (date >=1 && date <= maxDate)
+				     System.out.println(date + ". July, " + year);
+			         else 
+			         	System.out.println("Error - enter correct date format");
+		     break;
+		     
+		     case 8:
+		    	 maxDate = 31;
+		    	 if (date >=1 && date <= maxDate)
+				     System.out.println(date + ". August, " + year);
+			         else 
+			         	System.out.println("Error - enter correct date format");
+		     break;
+		     
+		     case 9:
+		    	 maxDate = 30;
+		    	 if (date >=1 && date <= maxDate)
+				     System.out.println(date + ". September, " + year);
+			         else 
+			         	System.out.println("Error - enter correct date format");
+		     break;
+
+		     case 10:
+		    	 maxDate = 31;
+		    	 if (date >=1 && date <= maxDate)
+				     System.out.println(date + ". October, " + year);
+			         else 
+			         	System.out.println("Error - enter correct date format");
+		     break;
+
+		     case 11:
+		    	 maxDate = 30;
+		    	 if (date >=1 && date <= maxDate)
+				     System.out.println(date + ". November, " + year);
+			         else 
+			         	System.out.println("Error - enter correct date format");
+		     break;
+		     
+		     case 12:
+		    	 maxDate = 31;
+		    	 if (date >=1 && date <= maxDate)
+				     System.out.println(date + ". December, " + year);
+			         else 
+			        	System.out.println("Error - enter correct date format");
+		     break;
+
+
+
+		     default:
+		     System.out.println("ERROR - enter correct date format!");
+		     break;
+		 }
+			
+}	
+	}
+
+
+		
+	
+
+		
+
+
